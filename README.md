@@ -1,3 +1,5 @@
+<img src="assets/banner-telecom.svg" width="100%" alt="Banner Comunicaciones II" />
+
 # 📡 REPOSITORIO COMUNICACIONES II
 
 Repositorio con el desarrollo de las prácticas de laboratorio de **Comunicaciones II** — Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (EIEET), Universidad Industrial de Santander (UIS).
@@ -34,5 +36,6 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 │   ├── figs/
 │   └── codigo/
 ├── assets/
+│   ├── banner-telecom.svg
 │   └── marco-animado.svg
 └── README.md
