@@ -18,9 +18,14 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Universidad_Industrial_de_Santander_logo.svg" width="180" alt="Logo UIS" />
-  <br><br>
-  <img src="assets/marco-animado.svg" width="280" alt="Marco animado tipo ecualizador" />
+  <div align="center">
+    <img src="assets/marco-animado.svg" width="320" alt="Marco animado" />
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Universidad_Industrial_de_Santander_logo.svg"
+         width="160"
+         style="margin-top: -190px;"
+         alt="Logo UIS" />
+  </div>
 </td>
 </tr>
 </table>
