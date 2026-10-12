@@ -2,29 +2,159 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 420 240">
 
-  <!-- Logo UIS (URL de Wikipedia que sí funciona) -->
-  <image x="20" y="20" width="200" height="200"
+  <!-- ================= LOGO UIS (centrado) ================= -->
+  <image x="110" y="20" width="200" height="200"
          xlink:href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"
          href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"/>
 
-  <!-- Logo GitHub (Wikimedia, reemplaza el de Pixabay) -->
-  <image x="245" y="55" width="140" height="140"
-         xlink:href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-         href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
+  <!-- ================= MARCO BASE ================= -->
+  <rect x="4" y="4" width="412" height="232" rx="14"
+        fill="none" stroke="#003366" stroke-width="2" opacity="0.35"/>
 
-  <!-- Marco azul institucional -->
-  <rect x="2" y="2" width="416" height="236" rx="12"
+  <!-- ==================================================== -->
+  <!-- BARRAS TIPO ECUALIZADOR — LADO SUPERIOR (12 barras) -->
+  <!-- ==================================================== -->
+  <g fill="#003366">
+    <rect x="20"  y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;4;18;8;14" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="52"  y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="4;18;8;14;4" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="84"  y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;6;14;4;18" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="116" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="10;4;18;12;10" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="148" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;18;6;10;14" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="180" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="6;14;10;18;6" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="234" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;8;14;6;18" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="266" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="8;14;4;18;8" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="298" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;6;18;10;14" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="330" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="4;18;8;14;4" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="362" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;10;4;14;18" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="394" y="8" width="6" height="14" rx="2">
+      <animate attributeName="height" values="10;18;6;14;10" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- BARRAS TIPO ECUALIZADOR — LADO INFERIOR (12 barras) -->
+  <!-- ==================================================== -->
+  <g fill="#C9A227">
+    <rect x="20"  y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;6;18;8;14" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="52"  y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="6;18;4;14;6" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="84"  y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;8;14;4;18" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="116" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="4;14;18;10;4" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="148" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;10;6;14;18" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="180" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="8;18;14;6;8" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="234" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;4;18;10;14" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="266" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="6;14;8;18;6" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="298" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="18;6;14;4;18" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="330" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="10;18;6;14;10" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="362" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="4;10;18;8;4" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="394" y="218" width="6" height="14" rx="2">
+      <animate attributeName="height" values="14;8;18;6;14" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- BARRAS TIPO ECUALIZADOR — LADO IZQUIERDO (5 barras)  -->
+  <!-- ==================================================== -->
+  <g fill="#003366">
+    <rect x="8" y="40"  width="14" height="6" rx="2">
+      <animate attributeName="width" values="14;6;18;10;14" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="8" y="80"  width="14" height="6" rx="2">
+      <animate attributeName="width" values="6;18;10;14;6" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="8" y="120" width="14" height="6" rx="2">
+      <animate attributeName="width" values="18;8;14;4;18" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="8" y="160" width="14" height="6" rx="2">
+      <animate attributeName="width" values="10;4;18;14;10" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="8" y="200" width="14" height="6" rx="2">
+      <animate attributeName="width" values="14;18;8;10;14" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- BARRAS TIPO ECUALIZADOR — LADO DERECHO (5 barras)    -->
+  <!-- ==================================================== -->
+  <g fill="#C9A227">
+    <rect x="398" y="40"  width="14" height="6" rx="2">
+      <animate attributeName="width" values="14;8;18;6;14" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="398" y="80"  width="14" height="6" rx="2">
+      <animate attributeName="width" values="6;14;8;18;6" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="398" y="120" width="14" height="6" rx="2">
+      <animate attributeName="width" values="18;6;14;10;18" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="398" y="160" width="14" height="6" rx="2">
+      <animate attributeName="width" values="10;18;4;14;10" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="398" y="200" width="14" height="6" rx="2">
+      <animate attributeName="width" values="14;6;18;8;14" dur="1.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- DESTELLO AZUL RECORRIENDO EL MARCO                   -->
+  <!-- ==================================================== -->
+  <rect x="4" y="4" width="412" height="232" rx="14"
         fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round"
-        stroke-dasharray="130 1194">
-    <animate attributeName="stroke-dashoffset" from="0" to="-1324"
+        stroke-dasharray="140 1260">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1400"
              dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Marco dorado -->
-  <rect x="2" y="2" width="416" height="236" rx="12"
+  <!-- ==================================================== -->
+  <!-- DESTELLO DORADO RECORRIENDO EN SENTIDO CONTRARIO     -->
+  <!-- ==================================================== -->
+  <rect x="4" y="4" width="412" height="232" rx="14"
         fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"
-        stroke-dasharray="60 1264">
-    <animate attributeName="stroke-dashoffset" from="0" to="1324"
+        stroke-dasharray="60 1340">
+    <animate attributeName="stroke-dashoffset" from="0" to="1400"
              dur="6s" repeatCount="indefinite"/>
   </rect>
+
 </svg>
