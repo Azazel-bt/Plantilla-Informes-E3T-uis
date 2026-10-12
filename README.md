@@ -26,3 +26,24 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 ---
 
 ### 📁 Estructura del repositorio
+├── Practica_1/
+├── Practica_2/
+├── Practica_3/
+│ ├── main.tex
+│ ├── sections/
+│ ├── figs/
+│ └── codigo/
+└── README.md
+
+
+### 🛠️ Requisitos
+- LaTeX (TeX Live o MiKTeX) con `IEEEtran`
+- Python 3.8+ (GNU Radio, NumPy)
+- GNU Radio Companion (para los bloques de procesamiento)
+
+### 👥 Autores
+- Nombre Estudiante 1
+- Nombre Estudiante 2
+- Nombre Estudiante 3
+
+*Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (EIEET) — Universidad Industrial de Santander (UIS)*
