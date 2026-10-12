@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 400 230">
+  <image x="10" y="15" width="200" height="200"
+         xlink:href="https://github.com/user-attachments/assets/c3706c58-b800-44cf-ba11-36ac2561635c"/>
+  <image x="230" y="40" width="150" height="150"
+         xlink:href="https://github.com/user-attachments/assets/8c8a0cbe-f396-4efe-b7fd-681e035f18ef"/>
+  <rect x="2" y="2" width="396" height="226" rx="12"
+        fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round"
+        stroke-dasharray="120 1124">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1244"
+             dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
