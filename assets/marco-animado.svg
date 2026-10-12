@@ -1,30 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 420 240">
+"""
+Genera marco-animado.gif con logos UIS + GitHub y marco girando.
+Requiere: pip install pillow requests
+"""
+from PIL import Image, ImageDraw
+import requests
+from io import BytesIO
 
-  <!-- Logo UIS (URL de Wikipedia que sí funciona) --> 
-  <image x="20" y="20" width="200" height="200"
-         xlink:href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"
-         href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"/>
+# --- URLs de los logos ---
+URL_UIS = ("https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/"
+           "Universidad_Industrial_de_Santander_logo.svg/"
+           "3840px-Universidad_Industrial_de_Santander_logo.svg.png")
 
-  <!-- Logo GitHub (Wikimedia, reemplaza el de Pixabay) -->
-  <image x="245" y="55" width="140" height="140"
-         xlink:href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-         href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"/>
+URL_GH = ("https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/"
+          "GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png")
 
-  <!-- Marco azul institucional -->
-  <rect x="2" y="2" width="416" height="236" rx="12"
-        fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round"
-        stroke-dasharray="130 1194">
-    <animate attributeName="stroke-dashoffset" from="0" to="-1324"
-             dur="4s" repeatCount="indefinite"/>
-  </rect>
+# --- Descargar logos ---
+logo_uis = Image.open(BytesIO(requests.get(URL_UIS).content)).convert("RGBA")
+logo_gh  = Image.open(BytesIO(requests.get(URL_GH).content)).convert("RGBA")
 
-  <!-- Marco dorado -->
-  <rect x="2" y="2" width="416" height="236" rx="12"
-        fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"
-        stroke-dasharray="60 1264">
-    <animate attributeName="stroke-dashoffset" from="0" to="1324"
-             dur="6s" repeatCount="indefinite"/>
-  </rect>
-</svg>
+# --- Redimensionar ---
+logo_uis = logo_uis.resize((200, 200), Image.LANCZOS)
+logo_gh  = logo_gh.resize((130, 130), Image.LANCZOS)
+
+# --- Lienzo ---
+W, H = 440, 260
+frames = []
+N_FRAMES = 60
+AZUL  = (0, 51, 102)
+DORADO = (201, 162, 39)
+
+# Perímetro aproximado del rectángulo redondeado
+def pos_en_perimetro(t, x0, y0, w, h, r):
+    """Devuelve (x,y) a lo largo del perímetro para t en [0,1)."""
+    perim = 2*(w - 2*r) + 2*(h - 2*r) + 2*3.1416*r
+    d = t * perim
+    # Lado superior
+    if d < (w - 2*r):
+        return x0 + r + d, y0
+    d -= (w - 2*r)
+    # Esquina sup-der
+    if d < (3.1416*r/2):
+        a = d / r
+        import math
+        return x0 + w - r + r*math.cos(a - 3.1416/2), y0 + r + r*math.sin(a - 3.1416/2)
+    d -= (3.1416*r/2)
+    # Lado derecho
+    if d < (h - 2*r):
+        return x0 + w, y0 + r + d
+    d -= (h - 2*r)
+    # Esquina inf-der
+    if d < (3.1416*r/2):
+        import math
+        a = d / r
+        return x0 + w - r + r*math.cos(a), y0 + h - r + r*math.sin(a)
+    d -= (3.1416*r/2)
+    # Lado inferior
+    if d < (w - 2*r):
+        return x0 + w - r - d, y0 + h
+    d -= (w - 2*r)
+    # Esquina inf-izq
+    if d < (3.1416*r/2):
+        import math
+        a = d / r
+        return x0 + r + r*math.cos(a + 3.1416/2), y0 + h - r + r*math.sin(a + 3.1416/2)
+    d -= (3.1416*r/2)
+    # Lado izquierdo
+    if d < (h - 2*r):
+        return x0, y0 + h - r - d
+    d -= (h - 2*r)
+    # Esquina sup-izq
+    import math
+    a = d / r
+    return x0 + r + r*math.cos(a + 3.1416), y0 + r + r*math.sin(a + 3.1416)
+
+for i in range(N_FRAMES):
+    t = i / N_FRAMES
+    frame = Image.new("RGBA", (W, H), (255, 255, 255, 0))
+    draw = ImageDraw.Draw(frame)
+    # Marco
+    draw.rounded_rectangle([(4, 4), (W-4, H-4)], radius=14,
+                           outline=AZUL, width=3)
+    # Logo UIS
+    frame.paste(logo_uis, (20, 30), logo_uis)
+    # Logo GitHub
+    frame.paste(logo_gh, (280, 65), logo_gh)
+    # Punto animado (azul) sobre el marco
+    px, py = pos_en_perimetro(t, 4, 4, W-8, H-8, 14)
+    draw.ellipse([(px-7, py-7), (px+7, py+7)], fill=AZUL)
+    # Punto animado (dorado) en oposición
+    px2, py2 = pos_en_perimetro((t + 0.5) % 1, 4, 4, W-8, H-8, 14)
+    draw.ellipse([(px2-5, py2-5), (px2+5, py2+5)], fill=DORADO)
+
+    frames.append(frame.convert("P", palette=Image.ADAPTIVE))
+
+# Guardar GIF
+frames[0].save("marco-animado.gif", save_all=True,
+               append_images=frames[1:], duration=50, loop=0, disposal=2)
+print("GIF generado: marco-animado.gif")
