@@ -18,7 +18,7 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-  <img src="assets/marco-animado.svg" width="360" alt="logos UIS con marco animado" />
+  <img src="assets/marco-animado.svg" width="380" alt="logos UIS y GitHub con marco animado" />
 </td>
 </tr>
 </table>
