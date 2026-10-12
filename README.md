@@ -18,14 +18,16 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-  <div align="center">
-    <img src="assets/marco-animado.svg" width="320" alt="Marco animado" />
-    <br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Universidad_Industrial_de_Santander_logo.svg"
-         width="160"
-         style="margin-top: -190px;"
-         alt="Logo UIS" />
-  </div>
+
+<!-- ============================================================
+     ARRASTRA AQUÍ TU IMAGEN (logo UIS, escudo, foto, etc.)
+     GitHub generará automáticamente un enlace como:
+     https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
+     Reemplaza la línea de abajo con ese enlace.
+     ============================================================ -->
+
+<!-- <img src="AQUI_VA_TU_ENLACE_DE_IMAGEN" width="180" alt="Logo UIS" /> -->
+
 </td>
 </tr>
 </table>
@@ -43,6 +45,5 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 │   ├── figs/
 │   └── codigo/
 ├── assets/
-│   ├── banner-telecom.svg
-│   └── marco-animado.svg
+│   └── banner-telecom.svg
 └── README.md
