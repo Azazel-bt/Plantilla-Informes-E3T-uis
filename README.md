@@ -1,4 +1,4 @@
-<img src="assets/barra-superior.svg" width="100%" alt="barra animada" />
+<img src="assets/banner-telecom.svg" width="100%" alt="Banner Comunicaciones II" />
 
 # 📡 REPOSITORIO COMUNICACIONES II
 
@@ -18,7 +18,9 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-  <img src="assets/marco-animado.svg" width="380" alt="logos UIS y GitHub con marco animado" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Universidad_Industrial_de_Santander_logo.svg" width="180" alt="Logo UIS" />
+  <br><br>
+  <img src="https://www.stickpng.com/assets/images/5847f5bdcef1014c0b5e489c.png" width="100" alt="Logo GitHub" />
 </td>
 </tr>
 </table>
@@ -36,6 +38,6 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 │   ├── figs/
 │   └── codigo/
 ├── assets/
-│   ├── barra-superior.svg
-│   └── marco-animado.svg
+│   ├── banner-telecom.svg
+│   └── (otros recursos)
 └── README.md
