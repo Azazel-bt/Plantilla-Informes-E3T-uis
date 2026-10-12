@@ -9,8 +9,8 @@
 
   <!-- Logo GitHub (Wikimedia, reemplaza el de Pixabay) -->
   <image x="245" y="55" width="140" height="140"
-         xlink:href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-         href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"/>
+         xlink:href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+         href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
 
   <!-- Marco azul institucional -->
   <rect x="2" y="2" width="416" height="236" rx="12"
@@ -28,5 +28,3 @@
              dur="6s" repeatCount="indefinite"/>
   </rect>
 </svg>
-
-el de la uis ya funciona pero no sale ninguna animacion
