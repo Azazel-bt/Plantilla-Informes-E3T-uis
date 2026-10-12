@@ -26,7 +26,6 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 </td>
 </tr>
 </table>
----
 
 ### 📁 Estructura del repositorio
 
