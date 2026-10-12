@@ -3,7 +3,7 @@
 Repositorio con el desarrollo de las prácticas de laboratorio de **Comunicaciones II** — UIS.
 
 <table width="100%">
-<tr>
+<tr> 
 <td>
 
 ## 📂 Contenido
