@@ -1,21 +1,18 @@
 # 📡 REPOSITORIO COMUNICACIONES II
-Dentro de este repositorio encontrará de manera organizada todos los pasos desarrollados en cada práctica de laboratorio de la asignatura **Comunicaciones II**.
+
+Repositorio con el desarrollo de las prácticas de laboratorio de **Comunicaciones II** — UIS.
 
 <table width="100%">
 <tr>
 <td>
 
-
 ## 📂 Contenido
-- **Instrucciones paso a paso** para la ejecución de cada práctica.  
-- **Imágenes, tablas y diagramas** obtenidos y elaborados durante el proceso.  
-- **Resultados y observaciones** relevantes que permiten comprender el desarrollo y la finalidad de cada actividad.
+- **Guías paso a paso** de cada práctica.
+- **Imágenes, tablas y diagramas** del desarrollo experimental.
+- **Resultados y observaciones** de cada actividad.
 
 ## 🎯 Objetivo
-Este material tiene como finalidad servir como apoyo para:
-- El seguimiento de las prácticas en tiempo real.  
-- La revisión y estudio posterior.  
-- La comprensión de los conceptos aplicados en el laboratorio.  
+Servir como apoyo para el seguimiento de las prácticas, su revisión posterior y la comprensión de los conceptos aplicados en el laboratorio.
 
 </td>
 <td align="right" valign="top">
@@ -26,4 +23,6 @@ Este material tiene como finalidad servir como apoyo para:
 </tr>
 </table>
 
+---
 
+### 📁 Estructura del repositorio
