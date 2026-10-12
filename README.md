@@ -1,4 +1,3 @@
-<img width="640" height="640" alt="github-6980894_640" src="https://github.com/user-attachments/assets/b591c91e-93bc-4f74-b354-85004f91e87f" />
 <img src="assets/banner-telecom.svg" width="100%" alt="Banner Comunicaciones II" />
 
 # 📡 REPOSITORIO COMUNICACIONES II
@@ -19,11 +18,9 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-<img width="374" height="182" alt="Recurso-1logo-uis-" src="https://github.com/user-attachments/assets/c8344034-95ba-4126-921f-d71ed338798e" />
-
-<img width="640" height="640" alt="github-6980894_640" src="https://github.com/user-attachments/assets/924c42ea-40c4-4c81-b282-212e50cfc72e" />
-
-
+  <img src="https://github.com/user-attachments/assets/c8344034-95ba-4126-921f-d71ed338798e" width="220" alt="Logo UIS" />
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/924c42ea-40c4-4c81-b282-212e50cfc72e" width="90" alt="Logo GitHub" />
 </td>
 </tr>
 </table>
