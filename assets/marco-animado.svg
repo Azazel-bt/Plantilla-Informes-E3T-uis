@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 400 240">
+     viewBox="0 0 420 240">
 
-  <!-- Logo UIS -->
-  <image x="15" y="20" width="200" height="200"
-         xlink:href="https://github.com/user-attachments/assets/c3706c58-b800-44cf-ba11-36ac2561635c"
-         href="https://github.com/user-attachments/assets/c3706c58-b800-44cf-ba11-36ac2561635c"/>
+  <!-- Logo UIS (URL de Wikipedia que sí funciona) -->
+  <image x="20" y="20" width="200" height="200"
+         xlink:href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"
+         href="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Universidad_Industrial_de_Santander_logo.svg/3840px-Universidad_Industrial_de_Santander_logo.svg.png"/>
 
-  <!-- Segundo logo -->
-  <image x="230" y="45" width="150" height="150"
-         xlink:href="https://github.com/user-attachments/assets/8c8a0cbe-f396-4efe-b7fd-681e035f18ef"
-         href="https://github.com/user-attachments/assets/8c8a0cbe-f396-4efe-b7fd-681e035f18ef"/>
+  <!-- Logo GitHub (Wikimedia, reemplaza el de Pixabay) -->
+  <image x="245" y="55" width="140" height="140"
+         xlink:href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+         href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
 
-  <!-- Marco que recorre el borde -->
-  <rect x="2" y="2" width="396" height="236" rx="12"
+  <!-- Marco azul institucional -->
+  <rect x="2" y="2" width="416" height="236" rx="12"
         fill="none" stroke="#003366" stroke-width="3" stroke-linecap="round"
-        stroke-dasharray="130 1134">
-    <animate attributeName="stroke-dashoffset" from="0" to="-1264"
+        stroke-dasharray="130 1194">
+    <animate attributeName="stroke-dashoffset" from="0" to="-1324"
              dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Segundo marco, dorado, en sentido contrario -->
-  <rect x="2" y="2" width="396" height="236" rx="12"
+  <!-- Marco dorado -->
+  <rect x="2" y="2" width="416" height="236" rx="12"
         fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"
-        stroke-dasharray="60 1204">
-    <animate attributeName="stroke-dashoffset" from="0" to="1264"
+        stroke-dasharray="60 1264">
+    <animate attributeName="stroke-dashoffset" from="0" to="1324"
              dur="6s" repeatCount="indefinite"/>
   </rect>
 </svg>
