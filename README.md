@@ -1,10 +1,12 @@
+<img src="assets/barra-superior.svg" width="100%" alt="barra animada" />
+
 # 📡 REPOSITORIO COMUNICACIONES II
 
-Repositorio con el desarrollo de las prácticas de laboratorio de **Comunicaciones II** — UIS.
+Repositorio con el desarrollo de las prácticas de laboratorio de **Comunicaciones II** — Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (EIEET), Universidad Industrial de Santander (UIS).
 
 <table width="100%">
-<tr> 
-<td>
+<tr>
+<td valign="top">
 
 ## 📂 Contenido
 - **Guías paso a paso** de cada práctica.
@@ -16,9 +18,7 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 
 </td>
 <td align="right" valign="top">
-  <img width="200" height="200" alt="universidad-industrial-de-santander-vector-logo" src="https://github.com/user-attachments/assets/c3706c58-b800-44cf-ba11-36ac2561635c" />
-  <br>
-  <img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/8c8a0cbe-f396-4efe-b7fd-681e035f18ef" />
+  <img src="assets/marco-animado.svg" width="360" alt="logos UIS con marco animado" />
 </td>
 </tr>
 </table>
@@ -26,24 +26,16 @@ Servir como apoyo para el seguimiento de las prácticas, su revisión posterior 
 ---
 
 ### 📁 Estructura del repositorio
+
+```text
 ├── Practica_1/
 ├── Practica_2/
 ├── Practica_3/
-│ ├── main.tex
-│ ├── sections/
-│ ├── figs/
-│ └── codigo/
+│   ├── main.tex
+│   ├── sections/
+│   ├── figs/
+│   └── codigo/
+├── assets/
+│   ├── barra-superior.svg
+│   └── marco-animado.svg
 └── README.md
-
-
-### 🛠️ Requisitos
-- LaTeX (TeX Live o MiKTeX) con `IEEEtran`
-- Python 3.8+ (GNU Radio, NumPy)
-- GNU Radio Companion (para los bloques de procesamiento)
-
-### 👥 Autores
-- Nombre Estudiante 1
-- Nombre Estudiante 2
-- Nombre Estudiante 3
-
-*Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (EIEET) — Universidad Industrial de Santander (UIS)*
